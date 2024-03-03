@@ -17,7 +17,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-image: url("family-camping-at-sunset.jpg");
-    background-color: black;
+    background-color:linear-gradient(to right,rgb(0, 0, 0),rgb(141, 137, 137));
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -57,27 +57,37 @@ nav {
     
 }
 
-#humbergbutton{
-    display: none;
-    font-size: 2rem;
-    
-    color: whitesmoke;
-   
-}
 
-a {
+
+nav a {
     text-decoration: none;
     color: white;
     font-size: 16px;
 }
+.humbergbutton{
+    
+    font-size: 3rem; 
+    color: whitesmoke;
+    font-weight: 500;
+
+}
+.humbergbutton{
+    display: none;
+}
+
 .frst {
     position: absolute;
-    top: 27vh;
+    top: 30vh;
     color: white;
     width: 100vw;
     display: flex;
     justify-content: center;
     text-align: center;
+   
+
+}
+.content2{
+    padding: 20px;
 
 }
 
@@ -121,14 +131,14 @@ a {
     outline: none;
 }
 .frstbutton:hover{
-  opacity: 0.2;
+  opacity: 0.4;
 
 }
 
 
 .second {
     position: relative;
-    top: 10vh;
+    top: 10vh;;
     left: 0;
     right: 1rem;
     display: flex;
@@ -150,6 +160,9 @@ a {
     font-weight: 400;
     font-size: 1rem;
     text-align: center;
+}
+.content2{
+    padding: 20px;
 }
 
 .items {
@@ -185,9 +198,10 @@ a {
 .third {
     position: relative;
     left: 4vw;
-    top: 30vh;
+    top: 20vh;
 
     width: 90%;
+
 }
 
 ul {
@@ -223,15 +237,24 @@ p {
 
     position: relative;
     top: 40vh;
-    padding: 40px;
+    padding-bottom: 100px;
+    
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    gap: 3rem;;
 }
 
 .container4 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding-right: 70px;
-    padding-left: 40px;
+    gap: 60px;
+    
+}
+.content4{
+    padding: 20px;
 }
 
 .content4 h2 {
@@ -314,7 +337,7 @@ textarea{
         padding-left: 3.3rem ;
         padding-right: 3.3rem;
     }
-    .nav{
+    nav{
         gap:35px;
     }
     .content1 h1 {
@@ -341,21 +364,111 @@ textarea{
 
     }
 }
-@media screen and (max-width:424px){
+@media screen and (max-width:695px){
+    header{
+        padding-left: 3rem ;
+        padding-right: 3rem;
+        gap:4rem;
+    }
+    nav{
+        gap:20px;
+    }
+    .content1 h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2.5rem;
+    }
+    .content1 p{
+        font-weight: 400;
+    }
+    .items {
+
+        row-gap: 30px;
+        column-gap: 40px;
+    
+    }
+    .container4 {
+        
+        justify-content: space-between;
+        gap:20px;
+        padding-right: 20px;
+        padding-left: 20px;
+
+    }
+}
+@media screen and (max-width:500px){
     header{
         width: 100vw;
         padding-left: 2rem ;
         padding-right: 2rem;
     }
-   nav a{
+   nav {
     display: none;
    
     }
-    nav i #humbergbutton{
-        display: inline;
-        font-size: 4rem;
-        color: whitesmoke;
+    .humbergbutton{
+        display: block;
     }
+  
+    
+    .content1 h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.5rem;
+    }
+    .content1 p{
+        font-size: 1rem;
+        font-weight: 400;
+        
+    }
+    .frstbutton{
+        width: 150px;
+    }
+    
+    .items {
+        grid-template-columns: repeat(2, 40vw);
+         grid-template-rows: repeat(3, 50vh);
+
+    
+    }
+    .box {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top:2rem ;
+        
+        align-items: center;
+        gap:20px;
+        border-radius: 10px;
+    }
+    
+    .container4 {
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+}
+@media screen and (max-width:425px){
+    header{
+        width: 100vw;
+        padding-left: 2rem ;
+        padding-right: 2rem;
+    }
+   nav {
+    display: none;
+   
+    }
+    .humbergbutton{
+        display: block;
+    }
+  
+    
     .content1 h1 {
         font-family: "Poppins", sans-serif;
         font-weight: 700;
@@ -404,15 +517,13 @@ textarea{
         padding-left: 2rem ;
         padding-right: 2rem;
     }
-   nav a{
-    display: none;
-   
-    }
-    nav i #humbergbutton{
-        display: inline;
-        font-size: 4rem;
-        color: whitesmoke;
-    }
+    nav {
+        display: none;
+       
+        }
+        .humbergbutton{
+            display: block;
+        }
     .content1 h1 {
         font-family: "Poppins", sans-serif;
         font-weight: 700;
@@ -468,20 +579,18 @@ textarea{
         padding-left: 2rem ;
         padding-right: 2rem;
     }
-   nav a{
-    display: none;
-   
-    }
-    nav i #humbergbutton{
-        display: inline;
-        font-size: 4rem;
-        color: whitesmoke;
-    }
+    nav {
+        display: none;
+       
+        }
+        .humbergbutton{
+            display: block;
+        }
     .content1 h1 {
         font-family: "Poppins", sans-serif;
         font-weight: 700;
         font-style: normal;
-        font-size: 1.35rem;
+        font-size: 1.2rem;
     }
     .content1 p{
         font-size: 0.9rem;
@@ -508,14 +617,10 @@ textarea{
         gap:20px;
         border-radius: 10px;
     }
-    
-    .container4 {
-        display: flex;
-        flex-direction: column;
-        gap:20px;
-        padding-right: 20px;
-        padding-left: 20px;
+    .reach_us{
+        padding: 20px;
     }
+    
     input{
         width: 300px;
     }
