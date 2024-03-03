@@ -1,0 +1,526 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    background-color: #F2F2F2;
+
+}
+
+.homepage {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("family-camping-at-sunset.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(0, 0, 0);
+    opacity: 1;
+    margin: 0;
+    object-fit: fill;
+}
+
+header {
+
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    align-items: center;
+    background-color: #333333;
+    position: fixed;
+    z-index: 2;
+    
+}
+
+.logo h1 {
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+    font-weight: bold;
+    align-items: center;
+    
+    
+    
+}
+
+#humbergbutton{
+    display: none;
+    font-size: 2rem;
+    
+    color: whitesmoke;
+   
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.frst {
+    position: absolute;
+    top: 27vh;
+    color: white;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.content1 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content1 h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.75rem;
+}
+
+.content1 p {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+}
+
+.frstbutton{
+
+    position: relative;
+    
+    
+    margin: 10px;
+    padding: 5px;
+    height: 60px;
+    width: 200px;
+    border-radius: 8px;
+    background-color: #e7e7e5;
+    border: none;
+    outline: none;
+}
+.frstbutton:hover{
+  opacity: 0.2;
+
+}
+
+
+.second {
+    position: relative;
+    top: 10vh;
+    left: 0;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+
+}
+
+.content2 h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.content2 p {
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.items {
+
+    display: grid;
+    grid-template-columns: repeat(3, 27vw);
+    grid-template-rows: repeat(2, 60vh);
+    row-gap: 30px;
+    column-gap: 50px;
+
+}
+
+.box {
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    border-radius: 10px;
+}
+.box p{
+    width: 80%;
+}
+
+.box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.third {
+    position: relative;
+    left: 4vw;
+    top: 30vh;
+
+    width: 90%;
+}
+
+ul {
+    position: relative;
+    left: 20px;
+}
+
+.container3 h2,
+p {
+    text-align: center;
+}
+
+.content3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 30px;
+}
+
+.content3 h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.content3 p {
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.fourth {
+
+    position: relative;
+    top: 40vh;
+    padding: 40px;
+}
+
+.container4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 70px;
+    padding-left: 40px;
+}
+
+.content4 h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.content4 p {
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.reach_us {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.info {
+    display: flex;
+    gap: 20px;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    width: 400px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+textarea{
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    width: 400px;
+    height: 80px;
+
+}
+
+#button {
+    padding: 10px;
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #525252;
+}
+/*****************************Tablet View***************************************/
+
+@media screen and (max-width:960px){
+    header{
+        padding-left: 4rem ;
+        padding-right: 4rem;
+    }
+    .content1 h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 3rem;
+    }
+    .content1 p{
+        font-weight: 400;
+    }
+
+
+}
+@media screen and (max-width:768px){
+    header{
+        padding-left: 3.3rem ;
+        padding-right: 3.3rem;
+    }
+    .nav{
+        gap:35px;
+    }
+    .content1 h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 3rem;
+    }
+    .content1 p{
+        font-weight: 400;
+    }
+    .items {
+
+        row-gap: 30px;
+        column-gap: 40px;
+    
+    }
+    .container4 {
+        
+        justify-content: space-between;
+        gap:20px;
+        padding-right: 20px;
+        padding-left: 20px;
+
+    }
+}
+@media screen and (max-width:424px){
+    header{
+        width: 100vw;
+        padding-left: 2rem ;
+        padding-right: 2rem;
+    }
+   nav a{
+    display: none;
+   
+    }
+    nav i #humbergbutton{
+        display: inline;
+        font-size: 4rem;
+        color: whitesmoke;
+    }
+    .content1 h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.5rem;
+    }
+    .content1 p{
+        font-size: 1rem;
+        font-weight: 400;
+        
+    }
+    .frstbutton{
+        width: 150px;
+    }
+    
+    .items {
+        grid-template-columns: repeat(2, 40vw);
+         grid-template-rows: repeat(3, 50vh);
+
+    
+    }
+    .box {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top:2rem ;
+        
+        align-items: center;
+        gap:20px;
+        border-radius: 10px;
+    }
+    
+    .container4 {
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+/*****************************mobile view ***************************************/
+@media screen and (max-width:375px){
+   header{
+        width: 100vw;
+        padding-left: 2rem ;
+        padding-right: 2rem;
+    }
+   nav a{
+    display: none;
+   
+    }
+    nav i #humbergbutton{
+        display: inline;
+        font-size: 4rem;
+        color: whitesmoke;
+    }
+    .content1 h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.35rem;
+    }
+    .content1 p{
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+    .frstbutton{
+        width: 150px;
+    }
+    
+    .items {
+        grid-template-columns: repeat(1, 80vw);
+         grid-template-rows: repeat(6, 60vh);
+
+    
+    }
+    .box {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top:2rem ;
+        
+        align-items: center;
+        gap:20px;
+        border-radius: 10px;
+    }
+    
+    .container4 {
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    input{
+        width: 300px;
+    }
+    textarea{
+        width: 300px;
+    }
+    
+}
+
+
+ @media screen and (max-width:320px){
+    header{
+        width: 100vw;
+        padding-left: 2rem ;
+        padding-right: 2rem;
+    }
+   nav a{
+    display: none;
+   
+    }
+    nav i #humbergbutton{
+        display: inline;
+        font-size: 4rem;
+        color: whitesmoke;
+    }
+    .content1 h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.35rem;
+    }
+    .content1 p{
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+    .frstbutton{
+        width: 150px;
+    }
+    
+    .items {
+        grid-template-columns: repeat(1, 80vw);
+         grid-template-rows: repeat(6, 60vh);
+
+    
+    }
+    .box {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top:2rem ;
+        
+        align-items: center;
+        gap:20px;
+        border-radius: 10px;
+    }
+    
+    .container4 {
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    input{
+        width: 300px;
+    }
+    textarea{
+        width: 300px;
+    }
+
+ }
